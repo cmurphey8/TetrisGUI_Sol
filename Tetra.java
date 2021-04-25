@@ -103,7 +103,7 @@ public class Tetra {
     // remove block from play if floored
     public static boolean unselect() {
         int lines = blob.update(tetroid);
-        if (lines > 1) score += 40 * Math.pow(3, lines);
+        if (lines > 0) score += 40 * Math.pow(3, lines);
         tetroid = null;
         return false;
     }

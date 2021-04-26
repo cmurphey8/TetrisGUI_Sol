@@ -83,7 +83,7 @@ public class SidePane extends JPanel {
         //     NOTE: CENTER component will fill remaining space!
         scorePanel.add(scoreDisp, BorderLayout.CENTER);
 
-        // add scorePanel to sidePane
+        // (1) add scorePanel to sidePane
         add(scorePanel);
     }
 }

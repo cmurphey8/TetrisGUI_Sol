@@ -37,10 +37,13 @@ public class SidePane extends JPanel {
         GridPane panel = new GridPane(nextC, 6, 4);
         add(panel);
 
-        /* TODO: 
+        /* TODO:     
             (1) choose a Layout Manager to nest (add) here in SidePane
             (2) choose GUI element to house text “SCORE:”
             (3) choose GUI element to display score
+            
+            NOTE - we could have declared a new class scorePanel in a separate file to perform the updates below 
+                    -> eg, as we did with gridPane, sidePane, Cell           
         */
 
         // score panel init

@@ -44,7 +44,7 @@ public class SidePane extends JPanel {
             
             NOTE:   We could have declared a new class "ScorePanel extends JPanel" 
                     in a separate file to perform the updates below 
-                    -> eg, as we did with gridPane, sidePane, Cell     
+                    -> eg, as we did with gridPane, sidePane    
         */
 
         // score panel init

@@ -53,7 +53,7 @@ public class SidePane extends JPanel {
         JLabel textDisp = new JLabel("SCORE");
         textDisp.setFont(new Font(textDisp.getFont().getName(), Font.PLAIN, 20));
         textDisp.setForeground(Color.ORANGE);
-        textDisp.setPreferredSize(new Dimension(10,100));
+        textDisp.setPreferredSize(new Dimension(100,100));
         textDisp.setVerticalAlignment(SwingConstants.CENTER);
         textDisp.setHorizontalAlignment(SwingConstants.CENTER);
         textDisp.setBorder(new LineBorder(Color.CYAN, 3, true));

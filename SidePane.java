@@ -42,35 +42,48 @@ public class SidePane extends JPanel {
             (2) choose GUI element to house text “SCORE:”
             (3) choose GUI element to display score
         */
+
         // score panel init
         JPanel scorePanel = new JPanel();
 
-        // score panel layout
+        // (1) choose score panel layout
         scorePanel.setLayout(new BorderLayout());
         scorePanel.setBackground(Color.BLACK);
-        
-        // label to display score title
+
+        // (2) init label to display score title
         JLabel textDisp = new JLabel("SCORE");
+        textDisp.setBorder(new LineBorder(Color.CYAN, 3, true));
+
+        // (2) set score title font-size & color
         textDisp.setFont(new Font(textDisp.getFont().getName(), Font.PLAIN, 20));
         textDisp.setForeground(Color.ORANGE);
+
+        // (2) set preferred (minimum) size for this label
         textDisp.setPreferredSize(new Dimension(100,100));
+
+        // (2) set label alignment 
         textDisp.setVerticalAlignment(SwingConstants.CENTER);
         textDisp.setHorizontalAlignment(SwingConstants.CENTER);
-        textDisp.setBorder(new LineBorder(Color.CYAN, 3, true));
+        
+        // (2) add score title label to NORTH component of BorderLayout
         scorePanel.add(textDisp, BorderLayout.NORTH);
         
-        // add score title label to sub-panel scorePanel
-        add(scorePanel);
-        
-        // label to display score var
+        // (3) init label to display score var
         JLabel scoreDisp = new JLabel(String.valueOf(score));
-        scoreDisp.setFont(new Font(scoreDisp.getFont().getName(), Font.PLAIN, 25));
-        
-        scoreDisp.setForeground(Color.CYAN);
-        scoreDisp.setHorizontalAlignment(SwingConstants.CENTER);
         scoreDisp.setBorder(new LineBorder(Color.CYAN, 3, true));
 
-        // add score var label to sub-panel scorePanel
+        // (3) set score title font-size & color
+        scoreDisp.setFont(new Font(scoreDisp.getFont().getName(), Font.PLAIN, 25));
+        scoreDisp.setForeground(Color.CYAN);
+
+        // (3) set label alignment
+        scoreDisp.setHorizontalAlignment(SwingConstants.CENTER);
+
+        // (3) add score var label CENTER component of BorderLayout
+        //     NOTE: CENTER component will fill remaining space!
         scorePanel.add(scoreDisp, BorderLayout.CENTER);
+
+        // add scorePanel to sidePane
+        add(scorePanel);
     }
 }

@@ -47,11 +47,11 @@ public class SidePane extends JPanel {
         */
 
         // score panel init
-        JPanel scorePanel = new JPanel();
+        JPanel ScorePanel = new JPanel();
 
         // (1) choose score panel layout
-        scorePanel.setLayout(new BorderLayout());
-        scorePanel.setBackground(Color.BLACK);
+        ScorePanel.setLayout(new BorderLayout());
+        ScorePanel.setBackground(Color.BLACK);
 
         // (2) init label to display score title
         JLabel textDisp = new JLabel("SCORE");
@@ -69,7 +69,7 @@ public class SidePane extends JPanel {
         textDisp.setHorizontalAlignment(SwingConstants.CENTER);
         
         // (2) add score title label to NORTH component of BorderLayout
-        scorePanel.add(textDisp, BorderLayout.NORTH);
+        ScorePanel.add(textDisp, BorderLayout.NORTH);
         
         // (3) init label to display score var
         JLabel scoreDisp = new JLabel(String.valueOf(score));
@@ -84,9 +84,9 @@ public class SidePane extends JPanel {
 
         // (3) add score var label CENTER component of BorderLayout
         //     NOTE: CENTER component will fill remaining space!
-        scorePanel.add(scoreDisp, BorderLayout.CENTER);
+        ScorePanel.add(scoreDisp, BorderLayout.CENTER);
 
         // (1) add scorePanel to sidePane
-        add(scorePanel);
+        add(ScorePanel);
     }
 }

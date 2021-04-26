@@ -42,7 +42,7 @@ public class SidePane extends JPanel {
             (2) choose GUI element to house text “SCORE:”
             (3) choose GUI element to display score
             
-            NOTE: - we could have declared a new class scorePanel in a separate file to perform the updates below 
+            NOTE:   We could have declared a new class scorePanel in a separate file to perform the updates below 
                     -> eg, as we did with gridPane, sidePane, Cell           
         */
 

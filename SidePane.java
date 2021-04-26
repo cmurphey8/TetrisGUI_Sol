@@ -42,7 +42,6 @@ public class SidePane extends JPanel {
             (2) choose GUI element to house text “SCORE:”
             (3) choose GUI element to display score
         */
-
         // score panel init
         JPanel scorePanel = new JPanel();
 
@@ -50,17 +49,6 @@ public class SidePane extends JPanel {
         scorePanel.setLayout(new BorderLayout());
         scorePanel.setBackground(Color.BLACK);
         
-        // label to display score var
-        JLabel scoreDisp = new JLabel(String.valueOf(score));
-        scoreDisp.setFont(new Font(scoreDisp.getFont().getName(), Font.PLAIN, 20));
-        
-        scoreDisp.setForeground(Color.CYAN);
-        scoreDisp.setHorizontalAlignment(SwingConstants.CENTER);
-        scoreDisp.setBorder(new LineBorder(Color.CYAN, 3, true));
-
-        // add score var label to sub-panel scorePanel
-        scorePanel.add(scoreDisp, BorderLayout.CENTER);
-
         // label to display score title
         JLabel textDisp = new JLabel("SCORE");
         textDisp.setFont(new Font(textDisp.getFont().getName(), Font.PLAIN, 20));
@@ -73,5 +61,16 @@ public class SidePane extends JPanel {
         
         // add score title label to sub-panel scorePanel
         add(scorePanel);
+        
+        // label to display score var
+        JLabel scoreDisp = new JLabel(String.valueOf(score));
+        scoreDisp.setFont(new Font(scoreDisp.getFont().getName(), Font.PLAIN, 25));
+        
+        scoreDisp.setForeground(Color.CYAN);
+        scoreDisp.setHorizontalAlignment(SwingConstants.CENTER);
+        scoreDisp.setBorder(new LineBorder(Color.CYAN, 3, true));
+
+        // add score var label to sub-panel scorePanel
+        scorePanel.add(scoreDisp, BorderLayout.CENTER);
     }
 }

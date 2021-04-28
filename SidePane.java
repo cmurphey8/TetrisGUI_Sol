@@ -47,7 +47,7 @@ public class SidePane extends JPanel {
                     -> eg, as we did with gridPane, sidePane    
         */
 
-        // score panel init
+        // (1) score panel init
         JPanel ScorePanel = new JPanel();
 
         // (1) choose score panel layout
